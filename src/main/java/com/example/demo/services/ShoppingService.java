@@ -2,6 +2,7 @@ package com.example.demo.services;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.*;
 
@@ -9,8 +10,8 @@ import java.util.*;
 public class ShoppingService {
 
     // 🔥 YAHAN APNI API KEY DAALNI HAI
-    private final String API_KEY = "0ba64068604a983f8a472afef64ad0af8facd7d85222c574b23cf77e87cb26d2";
-
+        @Value("${serpapi.api.key}")
+        private String API_KEY;
     public List<Map<String, Object>> searchProduct(String query) {
 
         System.out.println("\n========================");
