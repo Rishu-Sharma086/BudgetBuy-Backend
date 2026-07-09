@@ -9,7 +9,7 @@ import java.util.*;
 public class ShoppingService {
 
     // 🔥 YAHAN APNI API KEY DAALNI HAI
-    private final String API_KEY = "03923fd952b10cb8e890831e603ce5d297141be29391327bcbd5f06ad82f3cab";
+    private final String API_KEY = "0ba64068604a983f8a472afef64ad0af8facd7d85222c574b23cf77e87cb26d2";
 
     public List<Map<String, Object>> searchProduct(String query) {
 
